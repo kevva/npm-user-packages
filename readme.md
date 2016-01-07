@@ -28,7 +28,7 @@ npmUserPackages('kevva').then(data => {
 
 #### username
 
-**Required**  
+*Required*  
 Type: `string`
 
 User to fetch packages from.
