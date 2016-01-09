@@ -36,6 +36,7 @@ User to fetch packages from.
 
 ## Related
 
+* [npm-user-packages-cli](https://github.com/kevva/npm-user-packages-cli) - CLI for this module
 * [npm-user](https://github.com/sindresorhus/npm-user) - Get user info of a npm user
 * [npm-email](https://github.com/sindresorhus/npm-email) - Get the email of a npm user
 * [npm-keyword](https://github.com/sindresorhus/npm-keyword) - Get a list of npm packages with a certain keyword
