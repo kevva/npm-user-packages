@@ -1,9 +1,9 @@
 import test from 'ava';
-import fn from './';
+import m from './';
 
 test(async t => {
-	const pkgs = await fn('kevva');
+	const pkgs = await m('kevva');
 	t.true(pkgs.length > 100);
-	t.ok(pkgs[0].name);
-	t.ok(pkgs[0].description);
+	t.truthy(pkgs[0].name);
+	t.truthy(pkgs[0].description);
 });

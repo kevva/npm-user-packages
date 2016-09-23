@@ -1,19 +1,18 @@
 'use strict';
-var got = require('got');
-var Promise = require('pinkie-promise');
+const got = require('got');
 
-module.exports = function (username) {
+module.exports = username => {
 	if (typeof username !== 'string') {
-		return Promise.reject(new TypeError('Expected a string'));
+		return Promise.reject(new TypeError(`Expected a \`string\`, got \`${typeof username}\``));
 	}
 
-	var page = 0;
-	var ret = [];
+	let page = 0;
+	let ret = [];
 
 	return (function loop() {
-		var url = 'https://www.npmjs.com/profile/' + username + '/packages?offset=' + page;
+		const url = `https://www.npmjs.com/profile/${username}/packages?offset=${page}`;
 
-		return got(url, {json: true}).then(function (res) {
+		return got(url, {json: true}).then(res => {
 			ret = ret.concat(res.body.items);
 
 			if (res.body.hasMore) {
