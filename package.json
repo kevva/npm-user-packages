@@ -25,13 +25,10 @@
     "user"
   ],
   "dependencies": {
-    "got": "^6.5.0"
+    "got": "^7.0.0"
   },
   "devDependencies": {
     "ava": "*",
     "xo": "*"
-  },
-  "xo": {
-    "esnext": true
   }
 }
