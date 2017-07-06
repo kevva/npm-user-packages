@@ -1,6 +1,6 @@
 {
   "name": "npm-user-packages",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Get packages by a npm user",
   "license": "MIT",
   "repository": "kevva/npm-user-packages",
