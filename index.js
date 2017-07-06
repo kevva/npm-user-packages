@@ -6,18 +6,17 @@ module.exports = username => {
 		return Promise.reject(new TypeError(`Expected a \`string\`, got \`${typeof username}\``));
 	}
 
-	const size = 250;
-	let offset = 0;
+	let page = 0;
 	let ret = [];
 
 	return (function loop() {
-		const url = `https://api.npms.io/v2/search?q=maintainer:${username}&size=${size}&from=${offset}`;
+		const url = `https://www.npmjs.com/profile/${username}/packages?offset=${page}`;
 
 		return got(url, {json: true}).then(res => {
-			ret = ret.concat(res.body.results.map(x => x.package));
+			ret = ret.concat(res.body.items);
 
-			if (res.body.total > offset) {
-				offset += size - 1;
+			if (res.body.hasMore) {
+				page++;
 				return loop();
 			}
 
