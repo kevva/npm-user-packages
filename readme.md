@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save npm-user-packages
+$ npm install npm-user-packages
 ```
 
 
@@ -43,4 +43,4 @@ User to fetch packages from.
 
 ## License
 
-MIT © [Kevin Martensson](http://github.com/kevva)
+MIT © [Kevin Mårtensson](https://github.com/kevva)

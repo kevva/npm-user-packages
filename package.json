@@ -1,34 +1,36 @@
 {
-  "name": "npm-user-packages",
-  "version": "2.0.2",
-  "description": "Get packages by a npm user",
-  "license": "MIT",
-  "repository": "kevva/npm-user-packages",
-  "author": {
-    "name": "Kevin Martensson",
-    "email": "kevinmartensson@gmail.com",
-    "url": "github.com/kevva"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "api",
-    "npm",
-    "packages",
-    "user"
-  ],
-  "dependencies": {
-    "got": "^7.0.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "xo": "*"
-  }
+	"name": "npm-user-packages",
+	"version": "2.0.2",
+	"description": "Get packages by a npm user",
+	"license": "MIT",
+	"repository": "kevva/npm-user-packages",
+	"author": {
+		"name": "Kevin Martensson",
+		"email": "kevinmartensson@gmail.com",
+		"url": "github.com/kevva"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"api",
+		"homepage",
+		"npm",
+		"packages",
+		"user",
+		"version"
+	],
+	"dependencies": {
+		"got": "^7.0.0"
+	},
+	"devDependencies": {
+		"ava": "*",
+		"xo": "*"
+	}
 }
